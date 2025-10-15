@@ -18,11 +18,18 @@ function App() {
 
       {/* Hero Section */}
       <div className="hero">
-        <img src="/images/profile.jpg" alt="My Photo" />
+        <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="My Photo" />
         <h1>RAJ KONDE</h1>
         <p>Frontend Developer | Tech Enthusiast | Problem Solver</p>
         <a href="#about" className="btn">About Me</a>
-        <a href="/Pdf files/RajResume.pdf" target="_blank" className="btn" rel="noreferrer">View Resume</a>
+        <a
+          href={`${process.env.PUBLIC_URL}/Pdf files/RajResume.pdf`}
+          target="_blank"
+          className="btn"
+          rel="noreferrer"
+        >
+          View Resume
+        </a>
       </div>
 
       {/* About Section */}
@@ -85,9 +92,27 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            <tr><td>B.Tech CSE - Semester 4</td><td>Pimpri Chinchwad University</td><td>2024-25</td><td>9.29</td><td>8.55</td></tr>
-            <tr><td>HSC</td><td>Kamalnayan Bajaj Junior College</td><td>2021</td><td>82%</td><td>82%</td></tr>
-            <tr><td>SSC</td><td>PBEMS</td><td>2019</td><td>93%</td><td>93%</td></tr>
+            <tr>
+              <td>B.Tech CSE - Semester 4</td>
+              <td>Pimpri Chinchwad University</td>
+              <td>2024-25</td>
+              <td>9.29</td>
+              <td>8.55</td>
+            </tr>
+            <tr>
+              <td>HSC</td>
+              <td>Kamalnayan Bajaj Junior College</td>
+              <td>2021</td>
+              <td>82%</td>
+              <td>82%</td>
+            </tr>
+            <tr>
+              <td>SSC</td>
+              <td>PBEMS</td>
+              <td>2019</td>
+              <td>93%</td>
+              <td>93%</td>
+            </tr>
           </tbody>
         </table>
       </section>
@@ -97,14 +122,28 @@ function App() {
         <h2>Certifications</h2>
         <div className="certifications-container">
           <div className="cert-card">
-            <img src="/images/ibm.png" alt="Certificate 1" />
+            <img src={`${process.env.PUBLIC_URL}/images/ibm.png`} alt="Certificate 1" />
             <h3>Getting Started with Artificial Intelligence</h3>
-            <a href="/Pdf files/GettingStartedwithArtificialIntelligence_Badge20240912-8-1r97te.pdf" target="_blank" className="btn" rel="noreferrer">View PDF</a>
+            <a
+              href={`${process.env.PUBLIC_URL}/Pdf files/GettingStartedwithArtificialIntelligence_Badge20240912-8-1r97te.pdf`}
+              target="_blank"
+              className="btn"
+              rel="noreferrer"
+            >
+              View PDF
+            </a>
           </div>
           <div className="cert-card">
-            <img src="/images/HTML.png" alt="Certificate 2" />
+            <img src={`${process.env.PUBLIC_URL}/images/HTML.png`} alt="Certificate 2" />
             <h3>Full Stack Web Developer</h3>
-            <a href="/Pdf files/Udemy - HTML JSP.pdf" target="_blank" className="btn" rel="noreferrer">View PDF</a>
+            <a
+              href={`${process.env.PUBLIC_URL}/Pdf files/Udemy - HTML JSP.pdf`}
+              target="_blank"
+              className="btn"
+              rel="noreferrer"
+            >
+              View PDF
+            </a>
           </div>
         </div>
       </section>
